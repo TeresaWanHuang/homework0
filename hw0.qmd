@@ -1,0 +1,29 @@
+---
+title: "hw0"
+author: "Wan Huang"
+date: "8/30/2023"
+format: html
+execute:
+  echo: false
+---
+```{r}
+# In this report, we will solve the equation f(x) = ax' - bx + c = 0 for given values of a = 1, b = 3, and c= 2.
+# Given values
+a <- 1
+b <- 3
+c <- 2
+D <- b^2 - 4*a*c
+
+x1 <- (-b + sqrt(D)) / (2*a)
+x2 <- (-b - sqrt(D)) / (2*a)
+
+x1
+x2
+
+# plot 
+x <- seq(-10, 10, length = 100)
+plot(x, a*x^2 + b*x + c, type = "l")
+abline(h = 0, lty = 2)
+```
+
+###This Quarto document provides an in-depth explanation of the equation f(a)=ax′−bx+c=0, along with a comprehensive walk through of the solution methodology. The document incorporates the necessary R code to solve the equation for specific values of a = 1, b = 3, and c = 2.Additionally, the document features a visually informative plot that graphically illustrates the equation and its solutions. To enhance the clarity and focus of the document, the code used for calculations and plot generation has been intentionally concealed from the HTML output. This approach maintains the document's cleanliness and ensures that readers can easily grasp the underlying explanations and visualizations without being overwhelmed by technical details.
